@@ -1,0 +1,142 @@
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.fondo {
+   min-height: 100vh;
+}
+
+.fondo_menu {
+   background-color: #222529;
+}
+/* nav style*/
+
+.ul_nav {
+   display: flex;
+   gap: 1em;
+}
+
+.ul_nav .li_nav {
+   list-style: none;
+}
+ .a_nav {
+   text-align: center;
+   text-decoration: none;
+   color: #ccc;
+   font-family: Arial, Helvetica, sans-serif;
+
+   font-size: 18px;
+   
+   letter-spacing: 1px;
+   position: relative;
+   transition: 0.5s;
+ }
+
+ .a_nav:hover {
+   background: linear-gradient(45deg, cyan,blue);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .a_nav::before {
+   content: "";
+   position: absolute;
+   height: 2.5px;
+   bottom: -5px;
+   width: 0;
+   border-radius: 50px;
+   background: linear-gradient(45deg,cyan,blue);
+   transition: 0.5s;
+
+ }
+
+ .a_nav:hover::before {
+   width: 100%;
+ }
+
+/* nav style*/
+
+
+.boton {
+   color: white;
+   border: 1px solid white;
+   margin-left:  15px;
+   text-decoration: none;
+   padding: 6px 8px;
+   border-radius:  8px;
+   transition: .2s;
+}
+
+.boton:hover {
+   border: 1px solid gray;
+   color: gray;
+}
+
+.fondo_login {
+   background-color: rgba(0, 0, 0, 0.938);
+   min-height: 100vh;
+   padding-top: 50px;
+}
+
+.login {
+   color:  white;
+   margin: auto;
+   border: 1px solid gray;
+   padding: 20px;
+   border-radius: 6px;
+   background-color: rgb(51,47,47);
+}
+
+.icon, .titulo {
+   color: white;
+   text-align: center;
+
+}
+
+.titulo {
+   margin-bottom: 12px;
+}
+
+.icon .dog-icon {
+   font-size: 50px;
+   margin-bottom: 10px;
+   color:  white;
+} 
+
+.box_eye {
+   position: relative;
+
+}
+
+.box-eye button {
+   border: none;
+   position: absolute;
+
+}
+.chancePass {
+   position: absolute;
+   top: 35px;
+   left: 295px;
+   color: rgb(51,47.,b/47);
+   cursor: pointer;
+
+   }
+
+   .login p{
+      text-align: center;
+   }
+
+   @media (max-width: 768px) {
+      .fondo_login {
+         background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+      };
+   
+
+
+
+   }
+  
